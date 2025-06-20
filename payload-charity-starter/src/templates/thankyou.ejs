@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Thank You for Your Donation</title>
+  </head>
+  <body style="margin:0; padding:0; background-color:#f4f4f4; font-family: Arial, sans-serif;">
+
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#f4f4f4; padding: 30px 0;">
+        <tr>
+            <td>
+                <img src="logo.svg" alt="Your Organization Logo" style="display: block; margin: 12px auto; max-width: 200px;">
+            </td>
+        </tr>
+      <tr>
+        <td align="center">
+
+          <!-- Email Container -->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            
+            <!-- Header -->
+            <tr>
+              <td align="center" bgcolor="#21b4c4" style="padding: 30px 20px;">
+                <h1 style="color: #ffffff; margin: 0; font-size: 28px;">Thank You for Your Donation!</h1>
+              </td>
+            </tr>
+
+            <!-- Body Content -->
+            <tr>
+              <td style="padding: 30px 40px; color: #333333; font-size: 16px; line-height: 1.6;">
+                <p style="margin: 0 0 15px;">Dear <strong><%= name %></strong>,</p>
+                
+                <p style="margin: 0 0 15px;">
+                  We sincerely appreciate your generous donation of <strong>$<%= amount %></strong>. Your support makes a big difference in helping us achieve our mission.
+                </p>
+
+                <p style="margin: 0 0 15px;">
+                  Your contribution brings us closer to our goals, and we’re incredibly grateful for your kindness.
+                </p>
+
+                <p style="margin: 0;">
+                  Warm regards,<br>
+                  <strong>Netset Charity</strong><br>
+                  info@netset.io
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td align="center" style="padding: 20px; background-color: #eeeeee; font-size: 13px; color: #777777;">
+                &copy; 2025-26 Netset Charity. All rights reserved.<br>
+              </td>
+            </tr>
+
+          </table>
+
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>

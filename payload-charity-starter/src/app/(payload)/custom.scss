@@ -1,0 +1,144 @@
+//@import 'colors.scss';
+//@import 'app.scss';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@layer payload-default {
+    /*
+    :root {
+        https://github.com/payloadcms/payload/blob/main/packages/ui/src/scss/app.scss
+    }
+    */
+
+}
+
+.integration-instructions {
+    display: flex;
+    justify-content: right;
+}
+
+.nav__link , .nav-group__toggle {
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+:root {
+    --color-cyan-100: #23b3c3;
+    --color-cyan-200: #1596a7;
+    --color-cyan-300: #0c3c42;
+    --color-red-300: #d81111;
+    --color-red-100: #d811111a;
+    --color-white-100: #e7e7e7;
+    --color-white-200: #fff;
+}
+
+html { 
+
+    &[data-theme='light'] {
+        *{
+            font-family: "Outfit", sans-serif !important;
+        }
+        .template-minimal{
+            background-color: var(--color-cyan-100);
+            .template-minimal__wrap{
+                background-color: var(--color-white-200);
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                padding: 42px;
+                .login__brand {
+                    width: 40%;
+                    margin: 21px auto;
+                }
+            }
+            a{
+                color: var(--color-cyan-200);
+                font-weight: 700;
+                margin-top: 6px;
+                display: inline-block;
+            }
+           
+        }
+        
+        aside {
+            background-color: var(--color-cyan-100);
+        }
+        .nav-group__content a, .nav-group__label {
+            color:  var(--color-white-100);
+        }
+        .nav-group__label {
+            font-weight: bold;
+        }
+        .list-header__title-and-actions {
+            justify-content: space-between;
+        }
+        .list-header__content {
+            grid-template-columns: 1fr;
+            gap: 11px;
+        }
+        .edit-many {
+            border: 1px solid var(--color-cyan-100);
+            padding: 0px 12px;
+            border-radius: 5px;
+            background: rgb(35 179 195 / 7%);
+            button{
+                color: var(--color-cyan-100) !important; 
+                text-decoration: none;
+            }
+        }
+        .delete-documents__toggle{
+            border: 1px solid var(--color-red-300);
+            padding: 0px 12px;
+            border-radius: 5px;
+            background: var(--color-red-100);
+            color: var(--color-red-300) !important; 
+            text-decoration: none;
+        }
+        .pill--has-icon {
+            background: var(--color-white-200);
+            padding: 3px 17px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        .list-controls .column-selector{
+            margin-top: 5px;
+            padding: 10px;
+        }
+        .list-controls__wrap{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        .table {
+            background: #23b3c30d;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            th{
+                color: var(--color-cyan-300);
+                label{
+                    font-weight: 600;
+                }
+            }
+            td{
+                vertical-align: middle;
+                a{
+                    color: var(--color-cyan-100);
+                    font-weight: 500;
+                }
+            }
+        }
+        .card{
+            background-color: #23b3c30d;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        .btn--size-small{
+            background-color: var(--color-cyan-100);
+            color: var(--color-white-200);
+            padding: 5px 22px;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: 1px solid #999;
+            &:hover{
+                background-color: var(--color-cyan-200);
+            }
+        }
+        .list-create-new-doc__create-new-button {
+            background-color: var(--color-cyan-300);
+        }
+    }
+  }
